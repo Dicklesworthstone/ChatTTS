@@ -5,8 +5,8 @@ setup(
     version='0.1',
     packages=find_packages(),
     install_requires=[
-        'omegaconf,
-        'torch,
+        'omegaconf',
+        'torch',
         'tqdm',
         'einops',
         'vector_quantize_pytorch',
