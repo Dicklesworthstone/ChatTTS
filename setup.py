@@ -5,13 +5,19 @@ setup(
     version='0.1',
     packages=find_packages(),
     install_requires=[
-        'omegaconf~=2.3.0',
-        'torch~=2.0',
+        'omegaconf',
+        'torch',
         'tqdm',
         'einops',
         'vector_quantize_pytorch',
-        'transformers~=4.41.1',
+        'transformers',
         'vocos',
     ],
+    dependency_links=[
+        'https://download.pytorch.org/whl/nightly/cu121',
+    ],
+    extras_require={
+        'pre': ['torch']
+    },
     include_package_data=True,
 )
