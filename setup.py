@@ -13,11 +13,5 @@ setup(
         'transformers',
         'vocos',
     ],
-    dependency_links=[
-        'https://download.pytorch.org/whl/nightly/cu121',
-    ],
-    extras_require={
-        'pre': ['torch']
-    },
     include_package_data=True,
 )
